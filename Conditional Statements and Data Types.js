@@ -1,3 +1,4 @@
+//homework conditional statement and data types//
 let a = 'boo';
 let b = false;
 let c = 15;
