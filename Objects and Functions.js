@@ -66,13 +66,17 @@ ArgumentTypeCheck({}); // object
 
 // - Write a function that determines whether a number is prime or not 
 // IN PROGRESS!!!!
+// Простое число - число, которое больше единицы, делится только на 1 и на само себя без остатка.
 
 let PrimeCheck = function(n){
-    for (let i =2; i < n; i++){
-        if (n % i == 0){
-            return false
+    for (let i =2; i < n; i++){ // в цикле задала условие с перебором делителей
+        if (n % i == 0){ // условие, которое выполняется, если число составное
+            return false // что вернется, если число составное
         }
-    } return n > 1
-};
-
-console.log(PrimeCheck(5))
+    } return n > 1 // что вернется, если число простое + оно больше единицы
+}; 
+console.log(PrimeCheck(1));//false
+console.log(PrimeCheck(5));//true
+console.log(PrimeCheck(7));//true
+console.log(PrimeCheck(8));//false
+console.log(PrimeCheck(10));//false
