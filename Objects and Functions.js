@@ -67,12 +67,12 @@ ArgumentTypeCheck({}); // object
 // - Write a function that determines whether a number is prime or not 
 // IN PROGRESS!!!!
 
-// let PrimeCheck = function(n){
-//     let b = n-1;
-//     for (let i = 2; i <= b; i++ ){
-//         if (n%i === 0)
-//         console.log('not ok')
-//         } 
-//      
-//             } 
-// PrimeCheck(100);
+let PrimeCheck = function(n){
+    for (let i =2; i < n; i++){
+        if (n % i == 0){
+            return false
+        }
+    } return n > 1
+};
+
+console.log(PrimeCheck(5))
