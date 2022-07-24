@@ -63,7 +63,7 @@ const LoginCheck = function(username){
 
 // 4 - Write a function for calculating the type of argument and type output to the console
 
-let ArgumentTypeCheck = function(TypeValue){
+const ArgumentTypeCheck = function(TypeValue){
     console.log(typeof(TypeValue));
 };
 ArgumentTypeCheck(true); // boolean
@@ -77,7 +77,7 @@ ArgumentTypeCheck({}); // object
 // 5 - Write a function that determines whether a number is prime or not 
 // Простое число - число, которое больше единицы, делится только на 1 и на само себя без остатка.
 
-let PrimeCheck = function(n){
+const PrimeCheck = function(n){
     for (let i =2; i < n; i++){ // в цикле задала условие с перебором делителей
         if (n % i == 0){ // условие, которое выполняется, если число составное
             return false // что вернется, если число составное
