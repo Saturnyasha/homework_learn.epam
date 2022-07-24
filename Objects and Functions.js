@@ -82,8 +82,9 @@ let PrimeCheck = function(n){
         if (n % i == 0){ // условие, которое выполняется, если число составное
             return false // что вернется, если число составное
         }
-    } return n > 1 // что вернется, если число простое + оно больше единицы
+    } return n > 1 // что вернется, если число простое + оно больше единицы   
 }; 
+
 console.log(PrimeCheck(1));//false
 console.log(PrimeCheck(5));//true
 console.log(PrimeCheck(7));//true
