@@ -47,7 +47,7 @@ console.log(deliv); // 25
 
 let NewLogin = 'Artem';
 let SavedLogin = 'Tanya';
-let NameCheckout = (login) => { (login == SavedLogin)?console.log('Hello, ' + login + ', i happy to see you!'):console.log('Who are you? I dont know you.')
+let NameCheckout = (login) => { (login == SavedLogin)?console.log(`Hello,  ${login}, i happy to see you!`):console.log('Who are you? I dont know you.')
 };
 NameCheckout(SavedLogin); // Hello, Tanya, i happy to see you!
 NameCheckout(NewLogin); // Who are you? I dont know you.
