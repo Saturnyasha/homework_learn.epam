@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 // 1. Given an array consisting of movie names, iterate over the array with the output of the names of each movie to the console
 const arrMovie = ['movie 1', 'movie 2','movie 3','movie 4','movie 5'];
 for (let i = 0; i < arrMovie.length; i++) {
