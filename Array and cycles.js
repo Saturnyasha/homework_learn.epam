@@ -18,10 +18,10 @@ const autoVAG = ['Audi', 'Wolksvagen','BMV','Opel','Mersedes'];
 console.log(autoVAG.join()); // Audi,Wolksvagen,BMV,Opel,Mersedes
 console.log(autoVAG.join(''));// AudiWolksvagenBMVOpelMersedes
 console.log(autoVAG.join('-'));// Audi-Wolksvagen-BMV-Opel-Mersedes
-// to array
+// to array //
 let strToArray = "Audi,Wolksvagen,BMV,Opel,Mersedes";
 let autoVAGarr = strToArray.split(' ');
-console.log(autoVAGarr);//[ 'Audi', 'Wolksvagen', 'BMV', 'Opel', 'Mersedes' ]
+console.log(autoVAGarr);//[ 'Audi,Wolksvagen,BMV,Opel,Mersedes' ] - все названия как один элемент массива
 //or//
 let autoVAGarr2 = strToArray.split('');
 console.log(autoVAGarr2); 
@@ -32,13 +32,11 @@ console.log(autoVAGarr2);
 //     'V', ',', 'O', 'p', 'e', 'l',
 //     ',', 'M', 'e', 'r', 's', 'e',
 //     'd', 'e', 's'
-//   ]
+//   ] - каждый символ - элемент массива
 //or//
-let strToArray2 = "Audi Wolksvagen BMV Opel Mersedes";
-let autoVAGarr3 = strToArray2.split(','); //or split()
-let autoVAGarr4 = strToArray2.split(' ')
-console.log(autoVAGarr3);//[ 'Audi Wolksvagen BMV Opel Mersedes' ]
-console.log(autoVAGarr4);//[ 'Audi', 'Wolksvagen', 'BMV', 'Opel', 'Mersedes' ]
+let strToArray2 = "Audi Wolksvagen BMV Opel Mersedes"; // 
+let autoVAGarr3 = strToArray2.split(' ')
+console.log(autoVAGarr3);//[ 'Audi', 'Wolksvagen', 'BMV', 'Opel', 'Mersedes' ]
 
 //3. Given an array of the names of your friends, add the words hello to each element of the array
 const friends = ['Polina', 'Yulia', 'Tanya', 'Rita','Nastya'];
@@ -59,6 +57,8 @@ for (let el of numericArray){
 for(n = 0; n < numericArray.length; n++){
     console.log(Boolean(numericArray[n]))
 };
+//or//
+console.log(numericArray.map(e => !!e))// более короткая запись
 
 //5. Sort the array [1,6,7,8,3,4,5,6] in descending order
 const num = [1,6,7,8,3,4,5,6];
