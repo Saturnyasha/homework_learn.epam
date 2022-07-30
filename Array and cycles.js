@@ -1,5 +1,5 @@
 // 1. Given an array consisting of movie names, iterate over the array with the output of the names of each movie to the console
-const arrMovie = ['movie 1', 'movie 2','movie 3','movie 4','movie 5'];
+const arrMovie = ['Gran Torino', 'Scent of a woman','Big fish','Forrest Gump','Bicentennial Man','Cloud Atlas','Inception','The Prestige','Eternal Sunshine of the Spotless Mind'];
 for (let i = 0; i < arrMovie.length; i++) {
     console.log(arrMovie[i])
 };
