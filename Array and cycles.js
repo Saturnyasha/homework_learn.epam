@@ -66,7 +66,7 @@ num.sort (function(a,b){
     return b-a
 });
 console.log(num);//[ 8, 7, 6, 6,5, 4, 3, 1]
-// //or//
+// or //
 num.sort(function(a,b){
     if (a<b){
         return 1
@@ -77,6 +77,9 @@ num.sort(function(a,b){
     }
 });
 console.log(num);//[ 8, 7, 6, 6,5, 4, 3, 1]
+// or //
+num.sort((a,b) => a-b);
+console.log(num); // более короткая запись
 
 //6. Filter array [1,6,7,8,3,4,5,6] by value> 3
 const arrNum = [1,6,7,8,3,4,5,6];
