@@ -20,22 +20,22 @@ kitty.move();
 
 //OR//
 
-class Animal {
+class Animal { //create obj Animal
     constructor(options){
         this.name = options.name;
         this.age = options.age;
         this.color = options.color;
     }
-move(){
+move(){ //add method
      console.log(`${this.name} запрыгнул в коробочку`)
     }
 };
 
-class Cat extends Animal {};
+class Cat extends Animal {};//create obj Cat with inheritance from obj Animal
 const cat = new Cat ({
     name: 'Апельсин',
     age: 6,
     color: 'Рыжий',
 });
-console.log(cat);
-cat.move();
+console.log(cat);// check object 'cat'
+cat.move();//my cat make move from class Animal
