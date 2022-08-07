@@ -8,14 +8,14 @@ let Animal1 = {
     }
 };
 
-class Cat {
+class Cat1 {
     constructor(name) {
          this.name = name;
     }
 };
 
-Object.setPrototypeOf(Cat.prototype, Animal1);
-let kitty = new Cat("Апельсин");
+Object.setPrototypeOf(Cat1.prototype, Animal1);
+let kitty = new Cat1("Апельсин");
 kitty.move();
 
 //OR//
