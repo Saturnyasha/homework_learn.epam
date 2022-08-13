@@ -1,12 +1,15 @@
 //1. Given the string 'ahb acb aeb aeeb adcb axeb'. Write a regular expression that matches the strings ahb, acb, aeb by pattern: letter 'a', any character, letter 'b'
 
+let stringCheck = 'ahb acb aeb aeeb adcb axeb aXb AeN';
+let regExp = /a.b/gi; // ставлю флаги g - для поиска по всей строке и флаг i - для игнора регистра
+console.log(stringCheck.match(regExp)); //[ 'ahb', 'acb', 'aeb', 'aXb' ]
 
 
 
 //2. Given the string '2 + 3 223 2223'. Write a regex that finds line 2 + 3 without capturing the rest
 
 let stringNum = '2 + 3 233 2223';
-let re = /2 \+ 3/g // экранирую символ "+"! ставлю флаг -g?
+let re = /2 \+ 3/g // экранирую символ "+"! ставлю флаг -g для поиска по всей строке
 console.log(stringNum.match(re));
 
 
@@ -21,8 +24,8 @@ console.log(today.getDay()); // получить день
 
 // получу день недели в виде текста
 
-function getWeekDay() {
+function NameWeekDay() {
     let days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота']; // массив с днями недели, начиная с воскресенья
     return days[today.getDay()]; // возвращаю значение в виде номера элемента массива
   }
- console.log( getWeekDay(today) );
+ console.log( NameWeekDay(today) );
