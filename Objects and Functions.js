@@ -58,8 +58,8 @@ const LoginCheck = function(username){
     let UserLogin = (username == 'Sveta') ? 'Hello, ' + username + '!' : 'You shall not pass.'
     console.log(UserLogin)
     };
-    LoginCheck('Alex'); // Hello, Sveta !
-    LoginCheck('Sveta'); // You shall not pass.
+    LoginCheck('Alex'); // You shall not pass.
+    LoginCheck('Sveta'); // Hello, Sveta !
 
 // 4 - Write a function for calculating the type of argument and type output to the console
 
