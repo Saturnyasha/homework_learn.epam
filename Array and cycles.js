@@ -25,14 +25,14 @@ console.log(autoVAGarr);//[ 'Audi,Wolksvagen,BMV,Opel,Mersedes' ] - все на�
 //or//
 let autoVAGarr2 = strToArray.split('');
 console.log(autoVAGarr2); 
- // [
-//     'A', 'u', 'd', 'i', ',', 'W',
-//     'o', 'l', 'k', 's', 'v', 'a',
-//     'g', 'e', 'n', ',', 'B', 'M',
-//     'V', ',', 'O', 'p', 'e', 'l',
-//     ',', 'M', 'e', 'r', 's', 'e',
-//     'd', 'e', 's'
-//   ] - каждый символ - элемент массива
+ /* [
+   'A', 'u', 'd', 'i', ',', 'W',
+   'o', 'l', 'k', 's', 'v', 'a',
+   'g', 'e', 'n', ',', 'B', 'M',
+   'V', ',', 'O', 'p', 'e', 'l',
+   ',', 'M', 'e', 'r', 's', 'e',
+   'd', 'e', 's'
+   ] - каждый символ - элемент массива */
 //or//
 let strToArray2 = "Audi Wolksvagen BMV Opel Mersedes"; // 
 let autoVAGarr3 = strToArray2.split(' ')
@@ -42,11 +42,11 @@ console.log(autoVAGarr3);//[ 'Audi', 'Wolksvagen', 'BMV', 'Opel', 'Mersedes' ] -
 const friends = ['Polina', 'Yulia', 'Tanya', 'Rita','Nastya'];
 for ( let el of friends){
     console.log(`Hello, ${el}, how do you do?`)}
-// Hello, Polina, how do you do?
-// Hello, Yulia, how do you do?
-// Hello, Tanya, how do you do?
-// Hello, Rita, how do you do?
-// Hello, Nastya, how do you do?
+/* Hello, Polina, how do you do?
+Hello, Yulia, how do you do?
+Hello, Tanya, how do you do?
+Hello, Rita, how do you do?
+Hello, Nastya, how do you do? */
 
 //4. Convert numeric array to Boolean
 const numericArray = [1,3,0,6,7,15,0,0,0,9,13];

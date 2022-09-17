@@ -21,7 +21,8 @@ newcar.color = 'green'; // change proprty 'color' from black to green
 console.log(newcar); // check object - color changed :)
 
 
-// 2 - Pears and apples are accepted to the warehouse, write a function that returns the result of adding the number of accepted pears and apples
+/* 2 - Pears and apples are accepted to the warehouse, write a function that returns the result 
+of adding the number of accepted pears and apples */
 
 function warehouse(apples, pears) {
     return apples + pears;
@@ -43,7 +44,8 @@ let warehouse3 = (apples3,pears3) => apples3 + pears3
 let deliv = warehouse3(10,15);
 console.log(deliv); // 25
 
-// // 3 - Your name is saved in the payment terminal, write a function to define the name in the terminal (if you entered your name, then hello + name, if not, then there is no such name)
+/* 3 - Your name is saved in the payment terminal, write a function to define the name in the terminal 
+(if you entered your name, then hello + name, if not, then there is no such name)*/
 
 let NewLogin = 'Artem';
 let SavedLogin = 'Tanya';
@@ -61,7 +63,7 @@ const LoginCheck = function(username){
     LoginCheck('Alex'); // You shall not pass.
     LoginCheck('Sveta'); // Hello, Sveta !
 
-// 4 - Write a function for calculating the type of argument and type output to the console
+/* 4 - Write a function for calculating the type of argument and type output to the console */
 
 const ArgumentTypeCheck = function(TypeValue){
     console.log(typeof(TypeValue));
@@ -74,8 +76,8 @@ ArgumentTypeCheck(undefined); // undefined
 ArgumentTypeCheck({}); // object
 
 
-// 5 - Write a function that determines whether a number is prime or not 
-// Простое число - число, которое больше единицы, делится только на 1 и на само себя без остатка.
+/* 5 - Write a function that determines whether a number is prime or not 
+Простое число - число, которое больше единицы, делится только на 1 и на само себя без остатка. */
 
 const PrimeCheck = function(n){
     for (let i =2; i < n; i++){ // в цикле задала условие с перебором делителей
