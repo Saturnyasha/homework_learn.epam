@@ -12,10 +12,11 @@ let a = 3;
 
 let divide = (a,b) => {
     try {
-        if (b==0) {
+        if (b===0) {
             throw new Error('cannot be divided by zero');
-        } return a/b;
-    } catch(error) {
+        } 
+    return a/b;
+        } catch(error) {
             console.log(error.name);
             console.log(error.message);
     }

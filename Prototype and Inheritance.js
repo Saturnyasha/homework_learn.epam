@@ -1,6 +1,5 @@
-// Create 2 objects: animal and cat, add move property to animal object, cat object must inherit move property from object animal
-// Создайте 2 объекта: животное и кошка, добавьте свойство движения к объекту животного, 
-//объект кошки должен наследовать свойство движения от объекта животного.
+/* Create 2 objects: animal and cat, add move property to animal object, cat object must inherit move property from object animal
+ Создайте 2 объекта: животное и кошка, добавьте свойство движения к объекту животного, /объект кошки должен наследовать свойство движения от объекта животного.*/
 
 let Animal1 = {
     move() {
@@ -31,11 +30,11 @@ move(){ //add method
     }
 };
 
-class Cat extends Animal {};//create obj Cat with inheritance from obj Animal
+class Cat extends Animal {};
 const cat = new Cat ({
     name: 'Апельсин',
     age: 6,
     color: 'Рыжий',
 });
-console.log(cat);// check object 'cat'
-cat.move();//my cat make move from class Animal
+console.log(cat);
+cat.move();
