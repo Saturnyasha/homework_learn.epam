@@ -20,9 +20,9 @@ console.log(today.getDate());
 console.log(today.getDay()); 
 
 // получу день недели в виде текста
-
+let today2 = new Date();
 function NameWeekDay() {
   let days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
-  return days[today.getDay()]; 
+  return days[today2.getDay()]; 
 }
-console.log( NameWeekDay(today) );
+console.log( NameWeekDay(today2) );
