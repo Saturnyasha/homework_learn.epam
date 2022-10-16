@@ -12,11 +12,11 @@ move(){
     }
 };
 
-class Cat extends Animal {};
-const cat = new Cat ({
-    name: 'Апельсин',
-    age: 6,
-    color: 'Рыжий',
-});
-console.log(cat);
-cat.move();
+class Cat extends Animal {
+    constructor (name, age, color){
+        super (name, age, color)
+    }
+};
+
+const kotik = new Cat ("Апельсин","6","рыжий");
+kotik.move();
